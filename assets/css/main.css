@@ -13,7 +13,7 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Poppins",  sans-serif;
+  --heading-font: 'Times New Roman', Times, serif;
   --nav-font: "Raleway",  sans-serif;
 }
 
@@ -229,7 +229,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: var(--accent-color);
+  background-color: #01213d;
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -606,8 +606,8 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: rgba(255, 255, 255, 0.7);
+  background-color:  #01213d;
   border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
   font-size: 14px;
   position: relative;
@@ -628,15 +628,15 @@ h6 {
 }
 
 .footer .footer-about .logo span {
-  color: var(--heading-color);
+  color: white;
   font-family: var(--heading-font);
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.footer .footer-about p {
-  font-size: 14px;
+.footer p {
+  font-size: 17px;
   font-family: var(--heading-font);
 }
 
@@ -648,7 +648,7 @@ h6 {
   height: 40px;
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
+  font-size: 18px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-right: 10px;
   transition: 0.3s;
@@ -660,7 +660,8 @@ h6 {
 }
 
 .footer h4 {
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -678,7 +679,7 @@ h6 {
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 0;
 }
 
@@ -693,7 +694,7 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   line-height: 1;
 }
@@ -707,9 +708,9 @@ h6 {
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .footer .copyright p {
@@ -763,7 +764,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 99999;
   background-color: var(--accent-color);
@@ -808,6 +809,12 @@ h6 {
 }
 
 .page-title .heading {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 80px 0;
   border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
 }
@@ -1091,10 +1098,14 @@ section,
 
 .stats .stats-item span {
   font-size: 32px;
-  display: block;
+  /* display: block; */
   margin: 10px 0;
   font-weight: 700;
   color: var(--heading-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
 }
 
 .stats .stats-item p {
@@ -1110,8 +1121,8 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   text-align: center;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 80px 20px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
@@ -1724,6 +1735,64 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.social-links-f a {
+  background-color: white;
+  margin-right: 15px; /* Adds spacing between icons */
+  font-size: 1.5rem; /* Adjust the size of font icons */
+  display: inline-block;
+  transition: color 0.3s ease; /* Smooth hover effect */
+  text-decoration: none;
+}
+
+.social-links-h a {
+  padding: 5px;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 1.2rem; /* Adjust the size of font icons */
+  display: inline-block;
+  transition: color 0.3s ease; /* Smooth hover effect */
+  text-decoration: none;
+}
+
+.social-links-f a.facebook {
+  color: #1877F2; /* Facebook blue */
+}
+
+.social-links-f a.instagram {
+  color: #E4405F; /* Instagram pink */
+}
+
+.social-links-f a.tripadvisor img {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease; /* Smooth hover scaling */
+}
+
+.social-links-f a.tripadvisor img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-links-f a.booking img {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease; /* Smooth hover scaling */
+}
+
+.social-links-f a.booking img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.social-links-f a:hover {
+  color: #fffcec; /* Change color on hover */
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-decoration: none; /* Remove underline */
 }
