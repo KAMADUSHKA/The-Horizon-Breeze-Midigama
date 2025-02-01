@@ -279,6 +279,7 @@ h6 {
 .header .branding {
   min-height: 60px;
   padding: 10px 0;
+  border-bottom: 1px solid #7d6001;
 }
 
 .header .logo {
@@ -300,7 +301,7 @@ h6 {
 .header .cta-btn,
 .header .cta-btn:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #7d6001;
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -311,7 +312,7 @@ h6 {
 .header .cta-btn:hover,
 .header .cta-btn:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, #01213d, transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -961,9 +962,9 @@ section,
 
 .hero .content .why-box {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: hsla(208, 97%, 12%, 0.63);
   padding: 30px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .hero .content .why-box h3 {
@@ -998,7 +999,7 @@ section,
 .hero .content .icon-box {
   text-align: center;
   border-radius: 10px;
-  background: color-mix(in srgb, var(--surface-color), transparent 20%);
+  background: color-mix(in srgb, var(--surface-color), transparent 50%);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
   width: 100%;
@@ -1023,9 +1024,20 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  background: linear-gradient(rgba(21, 185, 217, 0.1), rgba(21, 185, 217, 0.1)), url(../img/white_background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .about .content h3 {
+  position: absolute;
+  margin-top: 15px;
   font-size: 2rem;
   font-weight: 700;
+  font-family: 'Playball', cursive;
 }
 
 .about .content ul {
@@ -1068,6 +1080,25 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+.stats {
+  /* background-color: #01213d; */
+  background: linear-gradient(45deg,  #01213d, rgb(75, 135, 195),  #01213d);
+  background-size: 150% 150%;
+  animation: gradiant 5s ease infinite;
+}
+
+@keyframes gradiant {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 .stats i {
   color: var(--contrast-color);
   background-color: var(--accent-color);
@@ -1091,7 +1122,7 @@ section,
   width: 100%;
   position: relative;
   text-align: center;
-  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: #ffffff 0px 2px 15px;
   border-radius: 4px;
   z-index: 0;
 }
@@ -1112,7 +1143,12 @@ section,
   padding: 0;
   margin: 0;
   font-family: var(--heading-font);
-  font-size: 16px;
+  font-size: 25px;
+}
+
+.stats .more-btn span {
+  font-size: 20px;
+  color: white
 }
 
 /*--------------------------------------------------------------
@@ -1501,7 +1537,8 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color: #7d6001;
+  scale: 1.2;
 }
 
 .faq .faq-container .faq-active {
@@ -1524,7 +1561,7 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1796,4 +1833,14 @@ section,
   cursor: pointer;
   z-index: 1000; /* Ensure it's on top of other content */
   text-decoration: none; /* Remove underline */
+}
+
+.heading_style {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.1;
+  top: -5px;
+  margin-bottom: 20px;
 }
