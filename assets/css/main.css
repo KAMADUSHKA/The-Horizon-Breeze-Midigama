@@ -1698,8 +1698,20 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
+.contact .info-container {
+  display: flex; /* Arrange items in a row */
+  justify-content: space-between; /* Space them evenly */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  gap: 40px; /* Add spacing between items */
+  margin: 50px;
+  margin-top: 30px;
+}
+
+.contact .info-item {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Distribute items equally */
+  max-width: 300px; /* Prevent items from stretching too much */
 }
 
 .contact .info-item i {
@@ -1713,7 +1725,7 @@ section,
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  margin-right: 15px;
+  margin-right: 15px; /* Space between icon and text */
 }
 
 .contact .info-item h3 {
@@ -1728,6 +1740,32 @@ section,
   margin-bottom: 0;
   font-size: 14px;
 }
+
+@media (max-width: 668px) {
+  .contact .info-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content */
+  }
+
+  .contact .info-item {
+    max-width: 100%; /* Take full width */
+    justify-content: center; /* Center align on mobile */
+  }
+
+  .contact .info-item i {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add space below the icon */
+  }
+
+  .contact .info-item {
+    flex-direction: column; /* Stack icon and text */
+    text-align: center; /* Center text */
+  }
+}
+
+
+
+
 
 .contact .php-email-form {
   height: 100%;
