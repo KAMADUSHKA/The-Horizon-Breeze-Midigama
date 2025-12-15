@@ -953,6 +953,13 @@ section,
   overflow: hidden;
 }
 
+/* Desktop */
+.carousel-item img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+
 .hero-slider img {
   height: 100vh;
   object-fit: cover;
@@ -983,9 +990,26 @@ section,
   text-transform: uppercase;
 }
 
-.hero-content h1 span {
-  color: #f4c430;
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
+/* Welcome to */
+.hero-welcome {
+  color: #ffffff; /* white */
+}
+
+/* Hotel name */
+.hero-title {
+  color: #f4c430; /* gold */
+}
+
+
+/* .hero-content h1 span {
+  color: #f4c430;
+} */
 
 .hero-content p {
   font-size: 1.1rem;
@@ -1014,7 +1038,12 @@ section,
     margin: 10px auto;
     width: 80%;
   }
+
+  .carousel-item img {
+    object-position: center top;
+  }
 }
+
 
 
 
