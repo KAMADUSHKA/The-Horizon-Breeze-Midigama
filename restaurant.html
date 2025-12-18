@@ -82,7 +82,7 @@
             <li><a href="index.html#services">Services</a></li>
             <li><a href="restaurant.html" class="active">Restaurant</a></li>
             <li><a href="index.html#departments">Rooms</a></li>
-            <li><a href="gallery.html" >Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -95,68 +95,44 @@
 
   <main class="main">
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg6-2.jpg" alt="" data-aos="fade-in">
-      <div class="container position-relative">
+    <section id="hero" class="hero-slider">
 
-        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>WELCOME TO The HORIZON BREEZE</h2>
-          <p>Escape to paradise at our serene coastal retreat. Experience breathtaking ocean views, personalized
-            service, and the ultimate relaxation.</p>
-        </div>
+      <!-- Slider -->
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        <div class="content row gy-4">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <h3>Why Choose Us</h3>
-              <p>
-                Nestled in the heart of , The Horizon Breeze is your ultimate escape to coastal bliss. Our hotel
-                combines modern comfort with the charm of tropical serenity,
-                offering guests an unforgettable experience.
-              </p>
-              <div class="text-center">
-                <a href="#services" class="more-btn"><span>Read More</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Why Box -->
+        <div class="carousel-inner">
 
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="d-flex flex-column justify-content-center">
-              <div class="row gy-4">
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                    <i class="fas fa-home"></i>
-                    <h4>On The Beach Villa</h4>
-                    <p>Enjoy the perfect relaxation in a minute with superb stunning surroundings with finest
-                      Beach.</p>
-                  </div>
-                </div>
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                    <i class="fas fa-utensils"></i>
-                    <h4>Restaurant</h4>
-                    <p>Cozy restaurant & classic interior blended dominant calm can enjoy the candle light at
-                      evening.</p>
-                  </div>
-                </div>
-
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                    <i class="fas fa-bed"></i>
-                    <h4>Luxury Rooms</h4>
-                    <p>Enjoy a comfortable stay with A/C, hot water, free WiFi, and stunning garden and lake
-                      views.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+          <div class="carousel-item active">
+            <img src="assets/img/hero-The-Horizon-Breeze-1.jpg" class="d-block w-100" alt="">
           </div>
+
+          <div class="carousel-item">
+            <img src="assets/img/hero-The-Horizon-Breeze-2.jpg" class="d-block w-100" alt="">
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/img/hero-bg6-1.jpg" class="d-block w-100" alt="">
+          </div>
+
         </div>
 
       </div>
+
+      <!-- Overlay Content -->
+      <div class="hero-content container">
+        <h1>
+          <span class="hero-welcome">RESTAURANT OF</span><br>
+          <span class="hero-title">The Horizon Breeze</span>
+        </h1>
+
+        <p>Experience luxury, ocean views & peaceful coastal living</p>
+
+        <div class="hero-buttons">
+          <a href="#departments" class="btn btn-primary">View Rooms</a>
+          <a href="contact.html" class="btn btn-outline-light">Book Now</a>
+        </div>
+      </div>
+
     </section>
 
 
@@ -178,322 +154,358 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul class="menu-filters isotope-filters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters">Lunch and Dinner</li>
-              <li data-filter=".filter-salads">Brunch</li>
-              <li data-filter=".filter-specialty">DRINKS</li>
-              <li data-filter=".filter-DESSERTS">DESSERTS</li>
+              <li data-filter=".filter-diner">Dinner</li>
+              <li data-filter=".filter-brunch">Brunch</li>
+              <li data-filter=".filter-breverage">BEVERAGE</li>
+              <!-- <li data-filter=".filter-DESSERTS">DESSERTS</li> -->
             </ul>
           </div>
         </div><!-- Menu Filters -->
 
         <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">RI LANKAN TRADITIONAL RICE & CURRY</a><span>Rs: 1000</span>
+              <a href="#">Pumpkin Soup</a><span>Rs: 900</span>
             </div>
             <div class="menu-ingredients">
-              Savor the authentic taste of sri lanka with a plate of steamed rice, sarved with three flavorful vegetable
-              curries. Choose from prawns, fish or beef, each cooked with aromatic spices. A perfect of rich, bold
-              flavors and texture.
+              Sri Lanka Pumpkin, Garlic, French Bread,
+              Zucchini, Carrot, Potato
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Vegetarian Kottu</a><span>Rs:800</span>
+              <a href="#">Seafood Soup </a><span>Rs:1000</span>
             </div>
             <div class="menu-ingredients">
-              A flavorful fusion of chopped paratha roti, stir-fried with
-              vegetables, savory spices & choice of portein, including the
-              milk gravy. <p>A popular street food bursting with bold, irressitable flavors,
-                perfect for a quick and satisfying meal.</p>
+              Prawns, Calamari, Tuna, Garlic, French Bread,
+              Tomato, Pasli
+              </p>
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Cheese Kottu</a><span>Rs:1300</span>
+              <a href="#">Grill Tuna with Chip salad </a><span>Rs:2000</span>
             </div>
             <div class="menu-ingredients">
-              A flavorful fusion of chopped paratha roti, stir-fried with
-              vegetables, savory spices & choice of portein, including the
-              milk gravy. <p>A popular street food bursting with bold, irressitable flavors,
-                perfect for a quick and satisfying meal.</p>
+              Tuna Fish, Rosemary, Olive Oil, White Wine,
+              Garlic, Fish Sauce </p>
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Seafood Kottu</a><span>Rs:1500</span>
+              <a href="#">Grill Chicken with Chip salad</a><span>Rs:2000</span>
             </div>
             <div class="menu-ingredients">
-              A flavorful fusion of chopped paratha roti, stir-fried with
-              vegetables, savory spices & choice of portein, including the
-              milk gravy. <p>A popular street food bursting with bold, irressitable flavors,
-                perfect for a quick and satisfying meal.</p>
+              Chicken, Rosemary, Olive Oil, White Wine, Garlic</p>
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Vegetarian basil/pasto</a><span>Rs:800</span>
+              <a href="#">Fried Fish with Chip Salad</a><span>Rs:2000</span>
             </div>
             <div class="menu-ingredients">
-              A classic Italian favorite, served with perfectly cooked pasta and your choice of rich, savory sauce.
-              Topped with parmeson cheese for an extra layer of flaver and a touch of elegance
+              Tuna Fish, Rosemary, Olive, Garlic,
+              Home Made Spicy
             </div>
           </div><!-- Menu Item -->
 
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Sphagetti cabonara/bolognese</a><span>Rs:1400</span>
+              <a href="#">Hot batter Mushroom with Chips Salad</a><span>Rs:1400</span>
             </div>
             <div class="menu-ingredients">
-              A classic Italian favorite, served with perfectly cooked pasta and your choice of rich, savory sauce.
-              Topped with parmeson cheese for an extra layer of flaver and a touch of elegance
+              Mushroom, Egg, Stitch Onion, Paprika,
+              Powder, with coneflower garlic mixer
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Seafood pasta marinara</a><span>Rs:1400</span>
+              <a href="#">Chicken Bolognese</a><span>Rs:2300</span>
             </div>
             <div class="menu-ingredients">
-              A classic Italian favorite, served with perfectly cooked pasta and your choice of rich, savory sauce.
-              Topped with parmeson cheese for an extra layer of flaver and a touch of elegance
+              Spaghetti Minced Chicken, Parmesan Cheese,
+              Italian Herbs Olive Oil, Basil
             </div>
           </div><!-- Menu Item -->
 
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">HORIZON BREEZE SPECIAL Chicken Burger</a><span>Rs:1000</span>
+              <a href="#">Cheese Pasta</a><span>Rs:2300</span>
             </div>
             <div class="menu-ingredients">
-              A juicy, tender patty served on a soft bun with fresh lettuce, tomato, pickles & cheese. A classic
-              favorite, grilled to perfection for a satisfying & delicious meal.
+              Pasta, White Sauce, Parmson Cheese,
+              Back Bacon, Parsley
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">HORIZON BREEZE SPECIAL Beef Burger</a><span>Rs:1200</span>
+              <a href="#">Spaghetti / Penne Carbonara </a><span>Rs:2300</span>
             </div>
             <div class="menu-ingredients">
-              A juicy, tender patty served on a soft bun with fresh lettuce, tomato, pickles & cheese. A classic
-              favorite, grilled to perfection for a satisfying & delicious meal.
+              Spaghetti, Penne, Garlic, Back Bacon
+              Parmson Cheese, Romano Cheese, Egg Yolk,
+              Parsley
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Pan Toast Cheese and Tomato Sandwich</a><span>Rs:1000</span>
+              <a href="#">Chicken Kottu</a><span>Rs:1800</span>
             </div>
-            <div class="menu-ingredients">
+            <!-- <div class="menu-ingredients">
               A delicious, toasted sandwich made with fresh bread, filled with your choice of savory ingredients, melted
               cheese and seasoned filings. Crispy on outside, melty and flavorful on the inside - perfect for a
               satisfying bite,
-            </div>
+            </div> -->
           </div><!-- Menu Item -->
 
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Pan Toast Chicken and Basil Sandwich</a><span>Rs:1100</span>
+              <a href="#">Seafood Kottu</a><span>Rs:2000</span>
             </div>
-            <div class="menu-ingredients">
+            <!-- <div class="menu-ingredients">
               A delicious, toasted sandwich made with fresh bread, filled with your choice of savory ingredients, melted
               cheese and seasoned filings. Crispy on outside, melty and flavorful on the inside - perfect for a
               satisfying bite,
-            </div>
+            </div> -->
           </div><!-- Menu Item -->
 
 
-          <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
             <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">GRILLED FISH</a><span>Rs:1200</span>
+              <a href="#">Vegetable Kottu</a><span>Rs:1500</span>
+            </div>
+            <!-- <div class="menu-ingredients">
+              Fresh tender fish grilled to perfection, seasoned with aromatic herbs and spices for a flavorful, smoky
+              fish. Served with french fries and green salad . Light & delicious option for seafood lovers.
+            </div> -->
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
+            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Chicken Burger </a><span>Rs:2300</span>
             </div>
             <div class="menu-ingredients">
-              Fresh tender fish grilled to perfection, seasoned with aromatic herbs and spices for a flavorful, smoky fish. Served with french fries and green salad . Light & delicious option for seafood lovers.
+              Minced Chicken Patty, Lettuce, Tomato,
+              Cucumber, Cheese, Mayonnaise, Chips & Sauce
+            </div>
+          </div><!-- Menu Item -->
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
+            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Beef Burger</a><span>Rs:2500</span>
+            </div>
+            <div class="menu-ingredients">
+              Minced Beef Patty, Lettuce, Tomato, Cucumber,
+              Cheese, Mayonnaise, Chips & Sauce
+            </div>
+          </div><!-- Menu Item -->
+          <div class="col-lg-6 menu-item isotope-item filter-diner">
+            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Crispy Chicken Burger</a><span>Rs:2300</span>
+            </div>
+            <div class="menu-ingredients">
+              Crispy Chicken, Lettuce, Tomato, Cucumber,
+              Cheese, Mayonnaise, Chips & Sauce
             </div>
           </div><!-- Menu Item -->
 
 
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <div class="col-lg-6 menu-item isotope-item filter-brunch">
             <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">BANANA PANCAKE</a><span>Rs:1200</span>
             </div>
             <div class="menu-ingredients">
-              Fluffy pancake topped with fresh banana slices, chocolate chips, fresh fruits and a drizzel of syrup for the perfect breakfast or dessert.
+              Fluffy pancake topped with fresh banana slices, chocolate chips, fresh fruits and a drizzel of syrup for
+              the perfect breakfast or dessert.
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <div class="col-lg-6 menu-item isotope-item filter-brunch">
             <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">AVOCADO TOAST</a><span>Rs:800</span>
             </div>
             <div class="menu-ingredients">
-              Mashed avocado on toasted sourdough served with your choice of poarched eggs or scrambled eggs or tofu. Topped with tomato,pickle onion, and a drizzel of mint vinaigrette, paired with a side of beetroot relish. A flavorful and nourishing delight.
+              Mashed avocado on toasted sourdough served with your choice of poarched eggs or scrambled eggs or tofu.
+              Topped with tomato,pickle onion, and a drizzel of mint vinaigrette, paired with a side of beetroot relish.
+              A flavorful and nourishing delight.
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <div class="col-lg-6 menu-item isotope-item filter-brunch">
             <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">GREEK SALAD</a><span>Rs:1200</span>
             </div>
             <div class="menu-ingredients">
-              A refreshing mix of crisp, fresh greens. Including lettuce & spanish, topped with colourful veggies & a light dressing including feta cheese. Heakthy, vibrant & full of flavor. Perfect as a side or a light meal.
+              A refreshing mix of crisp, fresh greens. Including lettuce & spanish, topped with colourful veggies & a
+              light dressing including feta cheese. Heakthy, vibrant & full of flavor. Perfect as a side or a light
+              meal.
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <div class="col-lg-6 menu-item isotope-item filter-brunch">
             <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">CESAR SALAD</a><span>Rs:1200</span>
             </div>
             <div class="menu-ingredients">
-              Crispy romain lettuce tossed in creamy carsar dressing with blach bacon, topped with crunchy croutons,grated parmesan cheese and a sprinkle of black pepper, a timeless, rich and savory salad that’s always satisfying.
+              Crispy romain lettuce tossed in creamy carsar dressing with blach bacon, topped with crunchy
+              croutons,grated parmesan cheese and a sprinkle of black pepper, a timeless, rich and savory salad that’s
+              always satisfying.
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <div class="col-lg-6 menu-item isotope-item filter-brunch">
             <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">HORIZON BREEZE SPECIAL OMLETTE</a><span>Rs:1200</span>
             </div>
             <div class="menu-ingredients">
-              A three egg omelette packs with fresh onions, tomatoes and avocado, served with salsa, plus two slices of crispy sourdoagh for a satisfying breakfast or brunch.  
+              A three egg omelette packs with fresh onions, tomatoes and avocado, served with salsa, plus two slices of
+              crispy sourdoagh for a satisfying breakfast or brunch.
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <div class="col-lg-6 menu-item isotope-item filter-brunch">
             <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">SHAKSHOUKA</a><span>Rs:1400</span>
             </div>
             <div class="menu-ingredients">
-              Savory tomato, garlic and onion mix paired with egg or tofu, served alongside traditional Sri Lanka coconut roti. Finished with mint vinaigrette and fresh parsly leaves for a brust or flavor.
+              Savory tomato, garlic and onion mix paired with egg or tofu, served alongside traditional Sri Lanka
+              coconut roti. Finished with mint vinaigrette and fresh parsly leaves for a brust or flavor.
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">FRESH JUICE-Watermelon</a><span>Rs:300</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">FRESH JUICE-Passionfruit</a><span>Rs:350</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">FRESH JUICE-Mango</a><span>Rs:350</span>
             </div>
             <div class="menu-ingredients">
-              
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">FRESH JUICE-Limesoda</a><span>Rs:400</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">FRESH JUICE-Pineapple</a><span>Rs:450</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">MILKSHAKE-Vanilla</a><span>Rs:400</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
-          
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">MILKSHAKE-Chocolate</a><span>Rs:400</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
-          
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">MILKSHAKE-Strawberry</a><span>Rs:400</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">LASSI-Mango</a><span>Rs:450</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">LASSI-Pineapple</a><span>Rs:450</span>
             </div>
             <div class="menu-ingredients">
-             
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">DETOX SMOOTHIE</a><span>Rs:600</span>
@@ -503,33 +515,33 @@
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">HB SPECIAL-Mixed fruits</a><span>Rs:750</span>
             </div>
             <div class="menu-ingredients">
-              
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">HB SPECIAL-Dates & peanut butter</a><span>Rs:750</span>
             </div>
             <div class="menu-ingredients">
-              
+
             </div>
           </div><!-- Menu Item -->
 
-          <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <div class="col-lg-6 menu-item isotope-item filter-breverage">
             <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Tea / Coffee</a><span>Rs:200</span>
             </div>
             <div class="menu-ingredients">
-              
+
             </div>
           </div><!-- Menu Item -->
 
@@ -540,7 +552,7 @@
               <a href="#">Curd with Kithul Treacle</a><span>Rs:750</span>
             </div>
             <div class="menu-ingredients">
-              
+
             </div>
           </div><!-- Menu Item -->
 
@@ -550,13 +562,13 @@
               <a href="#">Chocolate brownies</a><span>Rs:750</span>
             </div>
             <div class="menu-ingredients">
-              
+
             </div>
           </div><!-- Menu Item -->
 
 
-          
-          
+
+
 
         </div><!-- Menu Container -->
 
