@@ -1508,6 +1508,9 @@ section,
 }
 
 
+
+
+
 /*--------------------------------------------------------------
 # Appointment Section
 --------------------------------------------------------------*/
@@ -2336,8 +2339,8 @@ section,
 
 .menu-bg::before {
   content: "";
-  background: url('../img/events-bg.jpg') no-repeat center center/cover;
-  opacity: 0.05; /* Adjust this to your preference */
+  background: url('../img/events-slider/events-slider-3.jpg') no-repeat center center/cover;
+  opacity: 0.15; /* Adjust this to your preference */
   position: absolute;
   top: 0;
   left: 0;
