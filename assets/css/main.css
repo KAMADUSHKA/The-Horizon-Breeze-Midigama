@@ -1295,13 +1295,14 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color: rgba(255, 255, 255, 0.85);
   text-align: center;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
-  box-shadow: #3d3101ef 0px 2px 10px;
+  box-shadow: #3d3101ef 10px 8px 20px;
+  border-radius: 10px;
 }
 
 .services .service-item .icon {
@@ -1508,6 +1509,16 @@ section,
 }
 
 
+.services-bg {
+  background-image: url("../img/about-bg.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 80px 50px;
+  border-radius: 16px;
+  position: relative;
+}
 
 
 
